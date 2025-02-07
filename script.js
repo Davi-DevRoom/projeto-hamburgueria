@@ -8,15 +8,3 @@ const cartBtn = document.querySelector('#cart-btn');
 const cartCounter = document.querySelector('#cart-count');
 const addressInput = document.querySelector('#address');
 const addressWarn = document.querySelector('#address-warn');
-
-cartBtn.addEventListener('click', ()=>{
-    cartModal.classList.remove('hidden');
-    cartModal.classList.add('flex');
-})
-
-cartModal.addEventListener('click', (event)=>{
-    if(event.target===cartModal){
-        cartModal.classList.remove('flex');
-        cartModal.classList.add('hidden');
-    }
-})
