@@ -9,4 +9,3 @@ const cartCounter = document.querySelector('#cart-count');
 const addressInput = document.querySelector('#address');
 const addressWarn = document.querySelector('#address-warn');
 
-
