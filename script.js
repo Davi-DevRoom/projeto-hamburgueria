@@ -59,3 +59,8 @@ function addToCart(name, price){
         quantity: 1,
     })
 }
+
+function updateCartModal(){
+    cartItemsContainer.innerHTML = "";
+    
+}
