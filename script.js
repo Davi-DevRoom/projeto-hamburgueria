@@ -62,5 +62,5 @@ function addToCart(name, price){
 
 function updateCartModal(){
     cartItemsContainer.innerHTML = "";
-    
+    //update cart
 }
