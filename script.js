@@ -138,7 +138,15 @@ checkoutBtn.addEventListener("click", function(){
     const isOpen = checkRestaurantOpen();
     if(!isOpen){
         Toastify({
-            text: "Ops, o restaurante está fechado. Horário das 18 as 22"
+            text: "Ops, o restaurante está fechado. Horário das 18 as 22",
+            duration: 3000,
+            close: true,
+            gravity: "top",
+            position: "right",
+            stopOnFocus: true,
+            style: {
+                background: "#ef4444"
+            },
         }).showToast();
     }
 
