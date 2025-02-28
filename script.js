@@ -137,8 +137,9 @@ addressInput.addEventListener("input", function(event){
 checkoutBtn.addEventListener("click", function(){
     const isOpen = checkRestaurantOpen();
     if(!isOpen){
-        alert("RESTAURANTE FECHADO NO MOMENTO (ABRE AS 18h)");
-        return;
+        Toastify({
+            text: "Ops, o restaurante está fechado. Horário das 18 as 22"
+        }).showToast();
     }
 
     if(cart.length === 0) return;
