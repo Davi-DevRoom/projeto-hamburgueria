@@ -148,6 +148,8 @@ checkoutBtn.addEventListener("click", function(){
                 background: "#ef4444"
             },
         }).showToast();
+        
+        return;
     }
 
     if(cart.length === 0) return;
